@@ -19,24 +19,26 @@
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Конкретное ПЭС</a>
+						<a class="nav-link" href="tec.html">ПЭС</a>
 					</li>
+					<!--
 					<li class="nav-item">
 						<a class="nav-link" href="#">Суточное ПЭС</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Вариации ПЭС</a>
 					</li>
+					-->
 				</ul>
 			</div>
 		</nav>	
 		
 		<main role="main" class="container">
-			<div class="container">
-				<form>
+			<!--<div class="container">-->
+				<form class="form-horizontal">
 					<div class="form-group">
-						<label for="place">Название населенного пункта:</label>
-						<select class="form-control" id="place">
+						<label for="place" class="control-label">Название населенного пункта:</label>
+						<select class="form-control " id="place">
 							<option>Йошкар-Ола</option>
 							<option>Казань</option>
 							<option>Москва</option>
@@ -70,11 +72,11 @@
 					</div>
 					<label>Диапозон частот, Гц:</label>
 					<div class="form-row">
-						<div class="form-group col-md-3">
+						<div class="form-group col-xs-3">
 							<label for="frequency-start">от</label>
 							<input type="text" class="form-control" id="frequency-start" placeholder="0">
 						</div>
-						<div class="form-group col-md-3">
+						<div class="form-group col-xs-3">
 							<label for="frequency-end">до</label>
 							<input type="text" class="form-control" id="frequency-end" placeholder="10 000 000">
 						</div>
@@ -100,15 +102,15 @@
 					</div>
 					<label for="frequency-start">Число солнечных пятен, W = k(f+10g):</label>
 					<div class="form-row">
-						<div class="form-group col-md-3">
+						<div class="form-group col-xs-3">
 							<input type="text" class="form-control" id="sunspot-count" placeholder="0">
 							<small id="sunspot-count-help" class="form-text text-muted">кол-во наблюдаемых пятен, f</small>
 						</div>
-						<div class="form-group col-md-3">
+						<div class="form-group col-xs-3">
 							<input type="text" class="form-control" id="sunspot-group-count" placeholder="0">
 							<small id="sunspot-group-count" class="form-text text-muted">кол-во наблюдаемых групп, g</small>
 						</div>
-						<div class="form-group col-md-3">
+						<div class="form-group col-xs-3">
 							<input type="text" class="form-control" id="sunspot-coefficient" placeholder="0">
 							<small id="sunspot-coefficient" class="form-text text-muted">нормировочный коэффициент, k</small>
 						</div>
@@ -135,15 +137,15 @@
 						<small id="temperature" class="form-text text-muted">Текст под строкой.</small>
 					</div>
 					<div class="form-group">
-						<label for="exampleInputEmail1">Давление, мм рт.ст.</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="0">
+						<label for="atmospheric-pressure">Давление, мм рт.ст.</label>
+						<input type="email" class="form-control" id="atmospheric-pressure" placeholder="0">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputEmail1">Влажность, мм рт.ст.</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="0">
+						<label for="relative-humidity">Относительная влажность, %.</label>
+						<input type="email" class="form-control" id="relative-humidity" placeholder="70">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputEmail1">Осадки, мм рт.ст.</label>
+						<label for="exampleInputEmail1">Осадки, мм.</label>
 						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="0">
 					</div>
 					<div class="form-group">
